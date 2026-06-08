@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="colorpicker.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Color Picker</h1>
+        </header>
+        <main>
+            <div class="color-display">
+                <div class="color-box"></div>
+                <p class="color-value">#FFFFFF</p>
+            </div>
+            <div class="controls">
+                <div class="sliders">
+                    <div class="input-pair">
+                        <label for="red">Red</label>
+                        <input type="range" id="red" name="red" min="0" max="255" value="255">
+                    </div>
+                    <div class="input-pair">
+                        <label for="green">Green</label>
+                        <input type="range" id="green" name="green" min="0" max="255" value="255">
+                    </div>
+                    <div class="input-pair">
+                        <label for="blue">Blue</label>
+                        <input type="range" id="blue" name="blue" min="0" max="255" value="255">
+                    </div>
+                </div>
+                <div class="other-controls">
+                    <button class="randomize-btn" id="randomize-btn">Random Color</button>
+                    <button class="toggle-hex-button" id="toggle-hex-btn">Toggle Hex</button>
+                    <button class="save-color" id="save-color-btn">Save Color</button>
+                </div>
+                <div class="saved-colors-section">
+                    <header></header>
+                        <h2>Saved Colors</h2>
+                    </header>
+                    <div class="saved-colors">
+                        <template class="saved-color-template">
+                            <div class="saved-color-box"></div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Umair Almahmood</p>
+        </footer>
+    </div>
+
+    <script src="colorPicker.js" defer></script>
+</body>
+</html>
